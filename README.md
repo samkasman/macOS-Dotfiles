@@ -1,5 +1,7 @@
 # My macOS Dotfiles
 
+![Screenshot](https://github.com/samkasman/macOS-Dotfiles/blob/master/screenshot.jpg)
+
 ### What are dotfiles?
 
 In computing, dotfiles (files that begin with a `.`) are commonly hidden, used for storing user preferences or preserving the state of a utility. The included `install.sh` script interactively automates the deployment of all or parts of my base `macOS X` workstation configuration.
