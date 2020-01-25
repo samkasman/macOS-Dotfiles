@@ -32,7 +32,6 @@ Provides prompts and menus that guide you through the automated setup of:
 - Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`)
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot
-- Add option to install Oh-My-Zsh/Powerlevel10k from online or local
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Only copy iTerm2's `Dracula.itemcolors` if it's not already in place
 - Ubersicht - add custom widgets

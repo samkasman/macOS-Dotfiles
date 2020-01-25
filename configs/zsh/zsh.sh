@@ -21,28 +21,11 @@ read -r -p "Install Oh-My-Zsh framework? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Clone Oh-My-Zsh zsh framework
+		# Copy oh-my-zsh into place
 		rm -rf ~/.oh-my-zsh
-		git clone http://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
+		cp -R ./configs/zsh/oh-my-zsh ~/.oh-my-zsh
 
 		echo ""
-
-		# prompt to install Powerlevel10k theme
-		read -r -p "Install Powerlevel10k theme? [y/N] " response
-		case "$response" in
-			[yY][eE][sS]|[yY])
-
-				# Clone Powerlevel10K Oh-My-Zsh theme
-				rm -rf ~/.oh-my-zsh/themes/powerlevel10k
-				git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
-
-				echo ""
-				;;
-			*)
-
-				# do nothing
-				;;
-		esac
 
         ;;
     *)
