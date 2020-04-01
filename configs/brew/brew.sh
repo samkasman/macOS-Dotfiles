@@ -1,6 +1,6 @@
-#
+# --
 # Homebrew
-#
+# --
 
 # init
 # --
@@ -25,7 +25,7 @@ if [[ $(command -v brew) == "" ]]; then
 else
 
 	# brew is installed
-	echo "Homebrew detected. Skipping install.\\n"
+	echo "${GREEN}Homebrew detected. Skipping install.${WHITE}\\n"
 
 	# prompt to check for brew and formulae updates
 	read -r -p "Check for application updates? [y/N] " response
@@ -37,10 +37,13 @@ else
 
 			# update brew apps
 			brew upgrade
+
+			echo "${GREEN}Completed brew updates.${WHITE}"
 			;;
 		*)
 
 			# no - do nothing
+			echo "${GREEN}Skipping...${WHITE}"
 			;;
 	esac
 
@@ -58,10 +61,13 @@ case "$response" in
 
 		# remove old versions from the cellar
 		brew cleanup
+
+		echo "${GREEN}Completed brew install.${WHITE}"
         ;;
     *)
 
 		# no - do nothing
+		echo "${GREEN}Skipping...${WHITE}"
         ;;
 esac
 
