@@ -1,6 +1,6 @@
-#
+# --
 # App Store
-#
+# --
 
 # Init Message
 # --
@@ -38,3 +38,5 @@ mas install 1006087419
 
 # Tyme 2
 mas install 1063996724
+
+echo "\\n"
