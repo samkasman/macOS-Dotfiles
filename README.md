@@ -33,7 +33,6 @@ Provides prompts and menus that guide you through the automated setup of:
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
-- Only copy iTerm2's `Dracula.itemcolors` if it's not already in place
 - Ubersicht - add custom widgets
 - VSCode:
 	- install `Settings Sync` extension
