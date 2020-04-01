@@ -1,6 +1,6 @@
-#
+# --
 # bash
-#
+# --
 
 # Init Message
 # --
@@ -32,6 +32,7 @@ case "$response" in
     *)
 
 		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
         ;;
 esac
 
