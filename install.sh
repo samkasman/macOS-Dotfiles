@@ -2,12 +2,16 @@
 # Let's Go!
 #
 
-WHITE='\033[1;37m'
-GRAY='\033[0;37m'
-BLUEL='\033[1;34m'
-BLUED='\033[0;34m'
-GREEN='\033[0;32m'
-RED='\033[0;31m'
+# Variables
+# --
+# Set and export for use in other scripts
+WHITE='\033[1;37m' && export WHITE
+GRAY='\033[0;37m' && export GRAY
+BLUEL='\033[1;34m' && export BLUEL
+BLUED='\033[0;34m' && export BLUED
+GREEN='\033[0;32m' && export GREEN
+YELLOW='\033[0;33m' && export YELLOW
+RED='\033[0;31m' && export RED
 
 # Welcome message
 # --
@@ -31,7 +35,7 @@ chmod -R +x ./configs
 # Menu - Script Selection
 # --
 
-echo "\\nDeploy...\\n"
+echo "\\n${YELLOW}Deploy...${WHITE}\\n"
 
 PS3=""
 options=("Everything" "System Preferences" "Applications" "CLI Config" "Quit")
@@ -41,7 +45,9 @@ do
         "Everything")
             echo "\\n$opt, comin' right up!\\n"
 
+			# Get su'd up
 			sudo -v
+			echo "\\n"
 
 			# System Preferences
 			./configs/macOS/macOS.sh
@@ -53,6 +59,7 @@ do
 			./configs/iterm2/iterm2.sh
 			./configs/sublime-text/sublime-text.sh
 			./configs/vscode/vscode.sh
+			./configs/ubersicht/ubersicht.sh
 
 			# CLI Config
 			./configs/bash/bash.sh
@@ -63,7 +70,9 @@ do
         "System Preferences")
             echo "\\n$opt, comin' right up!\\n"
 
+			# Get su'd up
 			sudo -v
+			echo "\\n"
 
 			./configs/macOS/macOS.sh
 
@@ -71,7 +80,9 @@ do
         "Applications")
             echo "\\n$opt, comin' right up!\\n"
 
+			# Get su'd up
 			sudo -v
+			echo "\\n"
 
 			./configs/app-store/app-store.sh
 			./configs/brew/brew.sh
@@ -79,12 +90,15 @@ do
 			./configs/iterm2/iterm2.sh
 			./configs/sublime-text/sublime-text.sh
 			./configs/vscode/vscode.sh
+			./configs/ubersicht/ubersicht.sh
 
             break;;
 		"CLI Config")
             echo "\\n$opt, comin' right up!\\n"
 
+			# Get su'd up
 			sudo -v
+			echo "\\n"
 
 			./configs/bash/bash.sh
 			./configs/zsh/zsh.sh
