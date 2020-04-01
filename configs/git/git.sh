@@ -1,6 +1,6 @@
-#
+# --
 # git
-#
+# --
 
 # Init Message
 # --
@@ -20,6 +20,15 @@ read -r -p "Configure git? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
+		echo "\\n"
+
+		# Current git settings
+		# echo "Current git settings:"
+		# echo "${GREEN}User: ${WHITE}"
+		# git config user.name
+		# echo "${GREEN}Email: ${WHITE}"
+		# git config user.email
+
 		echo "\\nEnter name:"
 
 		read name
@@ -31,17 +40,15 @@ case "$response" in
 
 		read email
 
-		# set git name
+		# set git email
 		git config --global user.email $email --replace-all
 
-		# confirm git settings
-		# echo "Git settings:"
-		# git config user.name
-		# git config user.email
+		echo "${GREEN}Configured git settings${WHITE}"
 
         ;;
     *)
 		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
         ;;
 esac
 
