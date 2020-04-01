@@ -1,6 +1,6 @@
-#
+# --
 # iTerm2
-#
+# --
 
 # Init Message
 # --
@@ -15,8 +15,44 @@ printf "\e[0m"
 # Main stuff
 # --
 
-# Install the Dracula theme for iTerm2
-open "configs/iterm2/Dracula.itermcolors"
+# Prompt to install iTerm2 Dracula theme
+# -
+read -r -p "Install iTerm2 Dracula theme? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# Don’t display the annoying prompt when quitting iTerm2
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+		# do it
+		open "configs/iterm2/Dracula.itermcolors"
+
+		echo "${GREEN}Installed iTerm2 Dracula Theme.${WHITE}"
+
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to disable annoying quit prompt
+# -
+read -r -p "Disable iTerm2 quit prompt? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# do it
+		defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+		echo "${GREEN}Disabled iTerm2 quit prompt.${WHITE}"
+
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+
+        ;;
+esac
+
+echo "\\n"
