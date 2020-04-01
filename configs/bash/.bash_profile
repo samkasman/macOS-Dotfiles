@@ -107,6 +107,9 @@ cdf() {
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
+# covid-19 tracker
+alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
+
 # credit to good buddy Cristian Guerra for the following lighthouse and bsync functions
 # https://github.com/explorador
 
