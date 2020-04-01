@@ -1,6 +1,6 @@
-#
+# --
 # zsh
-#
+# --
 
 # Init Message
 # --
@@ -25,12 +25,13 @@ case "$response" in
 		rm -rf ~/.oh-my-zsh
 		cp -R ./configs/zsh/oh-my-zsh ~/.oh-my-zsh
 
-		echo ""
+		echo "${GREEN}Installed Oh-My-Zsh framework${WHITE}"
 
         ;;
     *)
 
 	# do nothing
+	echo "${GREEN}Skipping...${WHITE}"
 	;;
 esac
 
@@ -45,15 +46,16 @@ case "$response" in
 
 		# backup existing ~/.zshrc as ~/.zshrc.backup
 		mv ~/.zshrc ~/.zshrc.backup
-		echo "\\nBacked up existing ~/.zshrc as ~/.zshrc.backup"
+		echo "${GREEN}\\nBacked up existing ~/.zshrc as ~/.zshrc.backup${WHITE}"
 
 		# copy repo's configs/zsh/.zshrc to ~/.zshrc
 		cp configs/zsh/.zshrc ~/.zshrc
-		echo "\\nCopied repository version to ~/.zshrc"
+		echo "${GREEN}\\nCopied repository version to ~/.zshrc${WHITE}"
         ;;
     *)
 
 		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
         ;;
 esac
 
@@ -70,6 +72,9 @@ case "$response" in
 		sudo chsh -s /usr/local/bin/zsh
         ;;
     *)
+
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
         ;;
 esac
 
