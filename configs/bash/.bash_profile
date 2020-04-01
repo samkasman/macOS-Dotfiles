@@ -29,11 +29,11 @@ export NVM_DIR=/Users/sam/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # php
-export PATH="/usr/local/opt/php/bin:$PATH"
-export PATH="/usr/local/opt/php/sbin:$PATH"
+export PATH=$PATH:/usr/local/opt/php/bin
+export PATH=$PATH:/usr/local/opt/php/sbin
 
 # ruby
-export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=$PATH:/usr/local/opt/ruby/bin
 
 
 #
@@ -107,15 +107,15 @@ cdf() {
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
-# credit to good buddy cristian for the following metrix and watch functions
-# Cristian Guerra - https://github.com/explorador
+# credit to good buddy Cristian Guerra for the following lighthouse and bsync functions
+# https://github.com/explorador
 
 # google lighthouse (requires chrome)
 # --
 # scan desktop site - run: "metrix <url>"
 # scan mobile site - run: "metrix mobile <url>"
 
-metrix() {
+lighthouse() {
     if [ -z "$2" ]
         cd "/Users/sam/Code/x Metrix/"
     then
@@ -127,9 +127,9 @@ metrix() {
 
 # browser-sync
 # --
-# run: watch <url>
+# run: bsync <url>
 
-watch() {
+bsync() {
     # if argument is empty
     if [ -z "$1" ]
         then
@@ -142,7 +142,7 @@ watch() {
 }
 
 #
-# rice
+# rice [race inspired cosmetic enhancements]
 #
 
 # terminal prompt - "[time][pwd]: "
