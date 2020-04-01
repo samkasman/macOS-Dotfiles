@@ -1,6 +1,6 @@
-#
-# Ableton Live
-#
+# --
+# Ableton Live Suite
+# --
 
 # Init Message
 # --
@@ -11,11 +11,46 @@ echo "--"
 echo ""
 printf "\e[0m"
 
-# Copy the "DSatur8" theme into the Ableton app package
+# Prompt to install Ableton theme
 # --
-cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
+read -r -p "Install Ableton DSatur8 theme? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# Add expected directory structure if it doesn't exist
+		# Copy the "DSatur8" theme into the Ableton app package
+		cp "./configs/ableton/DSatur8.ask" "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/Themes/"
+
+		echo "${GREEN}Installed Ableton DSatur8 theme${WHITE}"
+
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to create ~/Audio directories
 # --
-mkdir -p ~/Audio/Audio\ Samples
-mkdir -p ~/Audio/Virtual\ Instruments
+read -r -p "Create ~/Audio directory structure? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Create expected directory structure for Audio Samples and Virtual Instruments
+		# --
+		mkdir -p ~/Audio/Audio\ Samples
+		mkdir -p ~/Audio/Virtual\ Instruments
+
+		echo "${GREEN}Created Ableton directory structure${WHITE}"
+
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+
+        ;;
+esac
+
+echo "\\n"
