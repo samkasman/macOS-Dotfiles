@@ -6,7 +6,7 @@ In computing, dotfiles (files that begin with a `.`) are commonly hidden, used f
 
 ### Installation
 
-**Warning**: Potentially dangerous. Run at your own risk. Be sure you understand what you're doing.
+**Warning**: Be sure you understand what you're doing. You might lose some important settings.
 
 run: `chmod +x install.sh && ./install.sh`
 
@@ -34,20 +34,13 @@ Provides prompts and menus that guide you through the automated setup of:
 - Prompt to mount NAS via IP address, always mount on boot
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
 - Ubersicht - add custom widgets
-- VSCode:
-	- install `Settings Sync` extension
-	- enable `code` command
-- Sublime Text
-	- install `Package Manager`
-	- install theme and settings
-	- install `subl` command
-- macOS - Create expected directories:
-	- `~/Code`
-	- `~/Streaming`
-	- `~/VirtualBox VMs`
+- VSCode: - install `Settings Sync` extension - enable `code` command
+- Sublime Text - install `Package Manager` - install theme and settings - install `subl` command
+- macOS - Create expected directories: - `~/Code` - `~/Streaming` - `~/VirtualBox VMs`
 
 ### Credit
 
 Lots of ideas borrowed from these folks:
+
 - [Cristian Guerra](https://github.com/explorador)
 - [Mathias Bynens](https://github.com/mathiasbynens)
