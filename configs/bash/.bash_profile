@@ -118,7 +118,7 @@ alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
 # scan desktop site - run: "metrix <url>"
 # scan mobile site - run: "metrix mobile <url>"
 
-lighthouse() {
+metrix() {
     if [ -z "$2" ]
         cd "/Users/sam/Code/x Metrix/"
     then

@@ -29,7 +29,7 @@ Provides prompts and menus that guide you through the automated setup of:
 
 ### To Do
 
-- Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`)
+- Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`, `lighthouse`)
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot
 - Automate iTerm2 theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
