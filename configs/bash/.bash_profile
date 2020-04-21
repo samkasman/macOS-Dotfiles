@@ -91,6 +91,9 @@ alias plz='sudo $(history -p !!)'
 # edit .zshrc
 alias zshed='code ~/.zshrc'
 
+# covid-19 tracker
+alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
+
 
 #
 # FUNCTIONS
@@ -107,8 +110,30 @@ cdf() {
 	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
-# covid-19 tracker
-alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
+# extract any archive format
+extract()
+{
+	if [ -f $1 ] ; then
+		case $1 in
+			*.tar.bz2)	tar xjf $1		;;
+			*.tar.gz)		tar xjf $1		;;
+			*.bz2)			bunzip2 $1		;;
+			*.rar)			unrar x $1		;;
+			*.gz)				gunzip $1			;;
+			*.tar)			tar xf $1			;;
+			*.tbz2)			tar xjf $1		;;
+			*.tzg)			tar xjf $1		;;
+			*.zip)			unzip $1			;;
+			*.Z)				uncompress $1	;;
+			*.7z)				7z x $1				;;
+			*.tar.gz)		tar J $1			;;
+			*.xz)				tar xvf $1		;;
+			*)					echo "'$1' cannot be extracted via extract()." ;;
+		esac
+	else
+		echo "'$1' is not a valid file."
+	fi
+}
 
 # credit to good buddy Cristian Guerra for the following lighthouse and bsync functions
 # https://github.com/explorador
