@@ -64,6 +64,7 @@ do
 
 			# CLI Config
 			./configs/bash/bash.sh
+			./configs/fonts/fonts.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
 
@@ -103,6 +104,7 @@ do
 			echo "\\n"
 
 			./configs/bash/bash.sh
+			./configs/fonts/fonts.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
 

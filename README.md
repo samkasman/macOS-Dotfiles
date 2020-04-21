@@ -24,11 +24,13 @@ Provides prompts and menus that guide you through the automated setup of:
 - [Homebrew](https://brew.sh/) and my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
 - My `~/.bash_profile`
 - [zsh](http://zsh.sourceforge.net/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [PowerLevel10k](https://github.com/romkatv/powerlevel10k) and my `~/.zshrc` file
+- [Powerline fonts](https://github.com/powerline/fonts)
 - Your `git` username and email address
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) dark theme
 
 ### To Do
 
+- Require password immediately after sleep or screensaver begins
 - macOS Finder sidebar favorites: `~/Desktop` - `~/Downloads` - `~` - `/Applications` - `~/Documents`
 - macOS - Create expected directories: - `~/Sync` - `~/Code` - `~/Streaming` - `~/VirtualBox VMs`
 - Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`, `lighthouse`)
