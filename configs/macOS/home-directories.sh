@@ -19,7 +19,9 @@ case "$response" in
 
 		# Music production toolbox
 		mkdir -p ~/Audio/Audio\ Samples
-		mkdir -p ~/Audio/Virtual\ Instruments
+		mkdir -p ~/Audio/Virtual\ Instruments/EastWest
+		mkdir -p ~/Audio/Virtual\ Instruments/NI\ Kontakt
+		mkdir -p ~/Audio/Virtual\ Instruments/Spectrasonics
 
 		echo "${GREEN}Created ~/Audio structure${WHITE}"
 
