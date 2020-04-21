@@ -1,5 +1,5 @@
 # --
-# Filesystem
+# ~ : There's no place like home
 # --
 
 # Init
@@ -17,7 +17,7 @@ read -r -p "Create ~/Audio directory structure? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# do it
+		# Music production toolbox
 		mkdir -p ~/Audio/Audio\ Samples
 		mkdir -p ~/Audio/Virtual\ Instruments
 
