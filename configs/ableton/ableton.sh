@@ -31,26 +31,3 @@ case "$response" in
 esac
 
 echo "\\n"
-
-# Prompt to create ~/Audio directories
-# --
-read -r -p "Create ~/Audio directory structure? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Create expected directory structure for Audio Samples and Virtual Instruments
-		# --
-		mkdir -p ~/Audio/Audio\ Samples
-		mkdir -p ~/Audio/Virtual\ Instruments
-
-		echo "${GREEN}Created Ableton directory structure${WHITE}"
-
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-
-        ;;
-esac
-
-echo "\\n"

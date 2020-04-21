@@ -51,6 +51,7 @@ do
 
 			# System Preferences
 			./configs/macOS/macOS.sh
+			./configs/macOS/home-directories.sh
 
 			# Applications + Config
 			./configs/app-store/app-store.sh
@@ -75,6 +76,7 @@ do
 			echo "\\n"
 
 			./configs/macOS/macOS.sh
+			./configs/macOS/home-directories.sh
 
             break;;
         "Applications")
