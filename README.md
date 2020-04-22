@@ -19,6 +19,7 @@ Provides prompts and menus that guide you through the automated setup of:
 - Your `hostname` -- who you appear to be
 - Your `ssh` key -- how you authenticate
 - My preferred macOS `System Preferences`
+- My home directory structure - `~/Sync` - `~/Code` - `~/Streaming` - `~/VirtualBox VMs`
 - My preferred macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
 - [Homebrew](https://brew.sh/) and my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
@@ -31,7 +32,6 @@ Provides prompts and menus that guide you through the automated setup of:
 
 - Require password immediately after sleep or screensaver begins
 - macOS Finder sidebar favorites: `~/Desktop` - `~/Downloads` - `~` - `/Applications` - `~/Documents`
-- macOS - Create expected directories: - `~/Sync` - `~/Code` - `~/Streaming` - `~/VirtualBox VMs`
 - Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`, `lighthouse`)
 - Prompt to setup a static IP
 - Prompt to mount NAS via IP address, always mount on boot

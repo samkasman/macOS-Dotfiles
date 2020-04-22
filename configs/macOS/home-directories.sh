@@ -105,7 +105,7 @@ case "$response" in
     [yY][eE][sS]|[yY])
 
 		# do it
-		mkdir -p '~/VirtualBox VMs'
+		mkdir -p ~/VirtualBox\ VMs
 
 		echo "${GREEN}Created '~/VirtualBox VMs' structure${WHITE}"
 
