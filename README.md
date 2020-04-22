@@ -30,7 +30,10 @@ Provides prompts and menus that guide you through the automated setup of:
 
 ### To Do
 
+- Set screensaver to Drift > Space Gray
 - Require password immediately after sleep or screensaver begins
+- Enable secondary click
+- Set old default scroll direction
 - macOS Finder sidebar favorites: `~/Desktop` - `~/Downloads` - `~` - `/Applications` - `~/Documents`
 - Add global npm packages (`gulp`, `grunt`, `browser-sync`, `resume-cli`, `composer`, `lighthouse`)
 - Prompt to setup a static IP
