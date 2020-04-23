@@ -4,6 +4,7 @@
 
 # Init Message
 # --
+
 printf "\e[96m"
 echo "--"
 echo "iTerm2"
@@ -15,26 +16,35 @@ printf "\e[0m"
 # Main stuff
 # --
 
-# Prompt to install iTerm2 Dracula theme
-# -
-read -r -p "Install iTerm2 Dracula theme? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
+echo "\\n${YELLOW}Install iTerm2 theme?${WHITE}\\n"
 
-		# do it
-		open "configs/iterm2/Dracula.itermcolors"
+PS3=""
+options=("SK" "Dracula" "None")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "SK")
+            echo "\\n$opt, comin' right up!\\n"
 
-		echo "${GREEN}Installed iTerm2 Dracula Theme.${WHITE}"
+			open "configs/iterm2/themes/SK.itermcolors"
 
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
+			echo "${GREEN}Installed iTerm2 SK Theme.${WHITE}\\n"
 
-        ;;
-esac
+            break;;
+        "Dracula")
+            echo "\\n$opt, comin' right up!\\n"
 
-echo "\\n"
+			open "configs/iterm2/themes/Dracula.itermcolors"
+
+			echo "${GREEN}Installed iTerm2 Dracula Theme.${WHITE}\\n"
+
+            break;;
+        "None")
+			echo "\\n${GREEN}No iTerm2 theme, then.${WHITE}\\n"
+            break;;
+        *) echo "\\n$REPLY is invalid.\\n";;
+    esac
+done
 
 # Prompt to disable annoying quit prompt
 # -
