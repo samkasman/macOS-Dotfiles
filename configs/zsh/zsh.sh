@@ -61,6 +61,28 @@ esac
 
 echo "\\n"
 
+# prompt to replace existing ~/.p10k.zsh
+
+read -r -p "Backup and replace existing ~/.p10k.zsh [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# backup existing ~/.p10k.zsh as ~/.p10k.zsh.backup
+		mv ~/.p10k.zsh ~/.p10k.zsh.backup
+		echo "${GREEN}\\nBacked up existing ~/.p10k.zsh as ~/.p10k.zsh.backup${WHITE}"
+
+		# copy repo's configs/zsh/.zshrc to ~/.p10k.zsh
+		cp configs/zsh/.p10k.zsh ~/.p10k.zsh
+		echo "${GREEN}\\nCopied repository version to ~/.p10k.zsh${WHITE}"
+        ;;
+    *)
+
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
 
 # prompt to set shell default to zsh
 

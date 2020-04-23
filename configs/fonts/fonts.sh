@@ -33,3 +33,26 @@ case "$response" in
 esac
 
 echo "\\n"
+
+# prompt to install MesloLGS NF (for zsh/Powerlevel10k)
+read -r -p "Install MesloLGS NF fonts (for zsh/Powerlevel10k)? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+			# install fonts
+			cp configs/fonts/MesloLGS\ NF/MesloLGS\ NF\ Bold\ Italic.ttf ~/Library/Fonts/
+			cp configs/fonts/MesloLGS\ NF/MesloLGS\ NF\ Bold.ttf ~/Library/Fonts/
+			cp configs/fonts/MesloLGS\ NF/MesloLGS\ NF\ Italic.ttf ~/Library/Fonts/
+			cp configs/fonts/MesloLGS\ NF/MesloLGS\ NF\ Regular.ttf ~/Library/Fonts/
+
+			echo "${GREEN}Installed MesloLGS NF fonts${WHITE}"
+
+        ;;
+    *)
+
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
