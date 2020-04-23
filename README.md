@@ -26,7 +26,8 @@ Provides prompts and menus that guide you through the automated setup of:
 	- `~/VirtualBox VMs` (Virtual Machines)
 - My preferred macOS app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
-- [Homebrew](https://brew.sh/) and my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
+- [Homebrew](https://brew.sh/)
+	- my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
 - My `~/.bash_profile`
 - [zsh](http://zsh.sourceforge.net/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [PowerLevel10k](https://github.com/romkatv/powerlevel10k), [Powerline fonts](https://github.com/powerline/fonts) and my `~/.zshrc` and `~/.p10k.zsh` files.
 - Your `git` username and email address

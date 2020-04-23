@@ -15,28 +15,138 @@ printf "\e[0m"
 # App Store Stuff
 # --
 
-# GarageBand
-mas install 682658836
+# Prompt to install program
+# -
+read -r -p "Install Garage Band? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# iMovie
-mas install 408981434
+		# Garage Band
+		mas install 682658836
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
 
-# Keynote
-mas install 409183694
+echo "\\n"
 
-# Microsoft Remote Desktop
-mas install 1295203466
+# Prompt to install program
+# -
+read -r -p "Install iMovie? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# Numbers
-mas install 409203825
+		# iMovie
+		mas install 408981434
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
 
-# Pages
-mas install 409201541
+echo "\\n"
 
-# SnippetsLab
-mas install 1006087419
+# Prompt to install program
+# -
+read -r -p "Install Keynote? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
 
-# Tyme 2
-mas install 1063996724
+		# Keynote
+		mas install 409183694
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install program
+# -
+read -r -p "Install Microsoft Remote Desktop? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Microsoft Remote Desktop
+		mas install 1295203466
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install program
+# -
+read -r -p "Install Numbers? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Numbers
+		mas install 409203825
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install program
+# -
+read -r -p "Install Pages? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Pages
+		mas install 409201541
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install program
+# -
+read -r -p "Install SnippetsLab? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# SnippetsLab
+		mas install 1006087419
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install program
+# -
+read -r -p "Install Tyme 2? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Tyme 2
+		mas install 1063996724
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
 
 echo "\\n"
