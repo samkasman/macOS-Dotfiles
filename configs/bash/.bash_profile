@@ -68,7 +68,7 @@ alias cp='cp -iv'
 alias edit='subl'
 
 # ls - detailed info
-alias ls='ls -FGlAhp'
+alias ls='ls -al'
 
 # mv - interactive (prompt before overwrite), verbose
 alias mv='mv -iv'
@@ -79,14 +79,8 @@ alias rm='rm -iv'
 # open pwd in Finder
 alias f='open -a Finder ./'
 
-# npm install fix
-alias npmplz='rm -rf node_modules/ && npm install'
-
 # path - echo everything in current PATH
 alias path='echo -e ${PATH//:/\\n}'
-
-# sudo last command fix
-alias plz='sudo $(history -p !!)'
 
 # edit .zshrc
 alias zshed='code ~/.zshrc'
@@ -94,6 +88,18 @@ alias zshed='code ~/.zshrc'
 # covid-19 tracker
 alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
 
+#
+# plz?
+#
+
+# plz - the OG. Last command, but sudo
+alias plz='sudo $(history -p !!)'
+
+# npmplz - nuke and reinstall npm dependencies
+alias npmplz='rm -rf node_modules/ && npm install'
+
+# vbplz - reinstall VirtualBox, god damnit.
+alias vbplz='brew cask reinstall virtualbox'
 
 #
 # FUNCTIONS
