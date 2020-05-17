@@ -34,20 +34,22 @@ Provides prompts and menus that guide you through the automated setup of:
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) dark theme
 
 ### To Do
-- macOS: prompt to set Static IP
-- macOS: Prompt to mount NAS via IP address, always mount on boot
-- macOS: Set desktop background image
-- macOS: Set screensaver to Drift > Spectrum, no clock
-- macOS: Require password immediately after sleep or screensaver begins
-- macOS: Enable secondary click
-- macOS: Set old default scroll direction
-- macOS: Finder sidebar favorites
-	- `~/Desktop`
-	- `~/Downloads`
-	- `~`
-	- `~/Sync`
-	- `~/Documents`
-	- `/Applications`
+- macOS
+	- prompt to set Static IP
+	- Prompt to mount NAS via IP address, always mount on boot
+	- Set desktop background image
+	- Set screensaver to Drift > Spectrum, no clock
+	- Require password immediately after sleep or screensaver begins
+	- Enable secondary click
+	- Set old default scroll direction
+	- Finder sidebar favorites
+		- `~/Desktop`
+		- `~/Downloads`
+		- `~`
+		- `~/Sync`
+		- `~/Documents`
+		- `/Applications`
+
 - npm (install global packages)
 	- `browser-sync`
 	- `gatsby-cli`
@@ -57,14 +59,18 @@ Provides prompts and menus that guide you through the automated setup of:
 	- `nodemon`
 	- `resume-cli`
 	- `typescript`
+
 - iTerm2
 	- handle theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)
+
 - Ubersicht
 	- add custom widgets
+
 - VSCode
 	- install `Settings Sync` extension
 	- add `Settings Sync` gist ID
 	- enable `code` command
+
 - Sublime Text
 	- install `Package Manager`
 	- install theme and settings
