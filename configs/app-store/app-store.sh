@@ -89,7 +89,7 @@ read -r -p "Install Numbers? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Numbers
+		# Apple Numbers
 		mas install 409203825
         ;;
     *)
@@ -106,7 +106,7 @@ read -r -p "Install Pages? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Pages
+		# Apple Pages
 		mas install 409201541
         ;;
     *)
