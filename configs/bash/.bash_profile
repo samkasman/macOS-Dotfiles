@@ -33,7 +33,7 @@ export PATH=$PATH:/usr/local/opt/php/bin
 export PATH=$PATH:/usr/local/opt/php/sbin
 
 # ruby
-export PATH=$PATH:/usr/local/opt/ruby/bin
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 
 #
