@@ -18,7 +18,6 @@ case "$response" in
     [yY][eE][sS]|[yY])
 
 		# Music production toolbox
-		mkdir -p ~/Audio/Audio\ Samples
 		mkdir -p ~/Audio/Virtual\ Instruments/EastWest
 		mkdir -p ~/Audio/Virtual\ Instruments/NI\ Kontakt
 		mkdir -p ~/Audio/Virtual\ Instruments/Spectrasonics
