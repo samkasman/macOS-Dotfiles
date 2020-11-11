@@ -5,6 +5,7 @@ tap "homebrew/core"
 
 # cli tools
 brew "ansible"
+brew "awscli"
 brew "brew-pip"
 brew "composer"
 brew "curl"
