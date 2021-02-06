@@ -68,8 +68,8 @@ alias cp='cp -iv'
 # edit text
 alias edit='subl'
 
-# ls - detailed info
-alias ls='ls -al'
+# ls - replace with exa
+alias ls='exa -al'
 
 # mv - interactive (prompt before overwrite), verbose
 alias mv='mv -iv'
@@ -78,7 +78,7 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 
 # open pwd in Finder
-alias f='open -a Finder ./'
+alias finder='open -a Finder ./'
 
 # path - echo everything in current PATH
 alias path='echo -e ${PATH//:/\\n}'
@@ -93,7 +93,7 @@ alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
 # plz?
 #
 
-# plz - the OG. Last command, but sudo
+# plz - last command, but sudo
 alias plz='sudo $(history -p !!)'
 
 # npmplz - nuke and reinstall npm dependencies
