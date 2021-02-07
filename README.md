@@ -24,7 +24,7 @@ Provides prompts and menus that guide you through the automated setup of:
 	- `~/Streaming` (Live stream style recordings)
 	- `~/Sync` (Cloud storage sync folder)
 	- `~/VirtualBox VMs` (Virtual Machines)
-- My preferred macOS app settings
+- My preferred `macOS` app settings
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
 - [Homebrew](https://brew.sh/)
 	- my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
