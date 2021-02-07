@@ -187,6 +187,23 @@ echo "\\n"
 
 # Prompt to install app
 # -
+read -r -p "Install Rocket.Chat? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Rocket.Chat
+		mas install 1086818840
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install SnippetsLab? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
