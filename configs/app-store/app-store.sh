@@ -119,11 +119,11 @@ echo "\\n"
 
 # Prompt to install app
 # -
-read -r -p "Install Numbers? [y/N] " response
+read -r -p "Install Apple Numbers? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Apple Numbers
+		# Apple Apple Numbers
 		mas install 409203825
         ;;
     *)
@@ -136,11 +136,11 @@ echo "\\n"
 
 # Prompt to install app
 # -
-read -r -p "Install Pages? [y/N] " response
+read -r -p "Install Apple Pages? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Apple Pages
+		# Apple Apple Pages
 		mas install 409201541
         ;;
     *)
@@ -159,6 +159,23 @@ case "$response" in
 
 		# SnippetsLab
 		mas install 1006087419
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
+read -r -p "Install Telegram? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Telegram
+		mas install 747648890
         ;;
     *)
 		# do nothing
