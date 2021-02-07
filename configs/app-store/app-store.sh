@@ -15,7 +15,24 @@ printf "\e[0m"
 # App Store Stuff
 # --
 
-# Prompt to install program
+# Prompt to install app
+# -
+read -r -p "Install Downlink? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Downlink
+		mas install 1454269192
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
 # -
 read -r -p "Install Garage Band? [y/N] " response
 case "$response" in
@@ -32,7 +49,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install iMovie? [y/N] " response
 case "$response" in
@@ -49,7 +66,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install Keynote? [y/N] " response
 case "$response" in
@@ -66,7 +83,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install Microsoft Remote Desktop? [y/N] " response
 case "$response" in
@@ -83,7 +100,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install Numbers? [y/N] " response
 case "$response" in
@@ -100,7 +117,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install Pages? [y/N] " response
 case "$response" in
@@ -117,7 +134,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install SnippetsLab? [y/N] " response
 case "$response" in
@@ -134,7 +151,7 @@ esac
 
 echo "\\n"
 
-# Prompt to install program
+# Prompt to install app
 # -
 read -r -p "Install Tyme 2? [y/N] " response
 case "$response" in
