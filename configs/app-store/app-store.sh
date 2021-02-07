@@ -17,6 +17,23 @@ printf "\e[0m"
 
 # Prompt to install app
 # -
+read -r -p "Install 1Password? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple Alfred
+		mas install 1333542190
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install Alfred? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
