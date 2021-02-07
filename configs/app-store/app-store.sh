@@ -17,6 +17,23 @@ printf "\e[0m"
 
 # Prompt to install app
 # -
+read -r -p "Install Apple Remote Desktop? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple Remote Desktop
+		mas install 409907375
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install Downlink? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
