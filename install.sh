@@ -63,7 +63,6 @@ do
 			./configs/ubersicht/ubersicht.sh
 
 			# CLI Config
-			./configs/bash/bash.sh
 			./configs/fonts/fonts.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
@@ -103,7 +102,6 @@ do
 			sudo -v
 			echo "\\n"
 
-			./configs/bash/bash.sh
 			./configs/fonts/fonts.sh
 			./configs/zsh/zsh.sh
 			./configs/git/git.sh
