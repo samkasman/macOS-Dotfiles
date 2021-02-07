@@ -17,6 +17,57 @@ printf "\e[0m"
 
 # Prompt to install app
 # -
+read -r -p "Install Alfred? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple Alfred
+		mas install 405843582
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
+read -r -p "Install Apple Numbers? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple Apple Numbers
+		mas install 409203825
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
+read -r -p "Install Apple Pages? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple Apple Pages
+		mas install 409201541
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install Apple Remote Desktop? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -108,40 +159,6 @@ case "$response" in
 
 		# Microsoft Remote Desktop
 		mas install 1295203466
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-        ;;
-esac
-
-echo "\\n"
-
-# Prompt to install app
-# -
-read -r -p "Install Apple Numbers? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Apple Apple Numbers
-		mas install 409203825
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-        ;;
-esac
-
-echo "\\n"
-
-# Prompt to install app
-# -
-read -r -p "Install Apple Pages? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Apple Apple Pages
-		mas install 409201541
         ;;
     *)
 		# do nothing
