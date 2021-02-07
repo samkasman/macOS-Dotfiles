@@ -51,6 +51,23 @@ echo "\\n"
 
 # Prompt to install app
 # -
+read -r -p "Install Apple iMovie? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Apple iMovie
+		mas install 408981434
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install Apple Numbers? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -136,23 +153,6 @@ echo "\\n"
 
 # Prompt to install app
 # -
-read -r -p "Install iMovie? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# iMovie
-		mas install 408981434
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-        ;;
-esac
-
-echo "\\n"
-
-# Prompt to install app
-# -
 read -r -p "Install Keynote? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -204,6 +204,23 @@ echo "\\n"
 
 # Prompt to install app
 # -
+read -r -p "Install Slack? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Slack
+		mas install 803453959
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
 read -r -p "Install SnippetsLab? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -227,6 +244,23 @@ case "$response" in
 
 		# Telegram
 		mas install 747648890
+        ;;
+    *)
+		# do nothing
+		echo "${GREEN}Skipping...${WHITE}"
+        ;;
+esac
+
+echo "\\n"
+
+# Prompt to install app
+# -
+read -r -p "Install Transmit? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY])
+
+		# Transmit
+		mas install 1436522307
         ;;
     *)
 		# do nothing
