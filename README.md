@@ -16,8 +16,8 @@ run: `chmod +x install.sh && ./install.sh`
 
 Provides prompts and menus that guide you through the automated setup of:
 
-- Your `hostname` -- who you appear to be
-- Your `ssh` key -- how you authenticate
+- `hostname` -- who you appear to be
+- `ssh` key -- how you authenticate
 - My preferred macOS `System Preferences`
 - My home directory structure
 	- `~/Code` (...Code)
@@ -28,9 +28,18 @@ Provides prompts and menus that guide you through the automated setup of:
 - [Xcode](https://developer.apple.com/library/archive/technotes/tn2339/_index.html) cli tools
 - [Homebrew](https://brew.sh/)
 	- my preferred macOS [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
-- My `~/.bash_profile`
 - [zsh](http://zsh.sourceforge.net/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [PowerLevel10k](https://github.com/romkatv/powerlevel10k), [Powerline fonts](https://github.com/powerline/fonts) and my `~/.zshrc` and `~/.p10k.zsh` files.
-- Your `git` username and email address
+- My `~/.zshrc`
+- `git` username and email address config
+- Global `npm` packages
+	- `browser-sync`
+	- `gatsby-cli`
+	- `grunt-cli`
+	- `gulp-cli`
+	- `lighthouse`
+	- `nodemon`
+	- `resume-cli`
+	- `typescript`
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) dark theme
 
 ### To Do
@@ -50,16 +59,6 @@ Provides prompts and menus that guide you through the automated setup of:
 		- `~/Sync`
 		- `~/Documents`
 		- `/Applications`
-
-- npm (install global packages)
-	- `browser-sync`
-	- `gatsby-cli`
-	- `grunt-cli`
-	- `gulp-cli`
-	- `lighthouse`
-	- `nodemon`
-	- `resume-cli`
-	- `typescript`
 
 - iTerm2
 	- handle theme like [this](https://github.com/mbadolato/iTerm2-Color-Schemes/issues/140)

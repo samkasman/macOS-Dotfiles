@@ -56,6 +56,7 @@ do
 			# Applications + Config
 			./configs/macOS/app-store.sh
 			./configs/brew/brew.sh
+			./configs/npm/npm.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh
 			./configs/sublime-text/sublime-text.sh
@@ -88,6 +89,7 @@ do
 
 			./configs/macOS/app-store.sh
 			./configs/brew/brew.sh
+			./configs/npm/npm.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh
 			./configs/sublime-text/sublime-text.sh
