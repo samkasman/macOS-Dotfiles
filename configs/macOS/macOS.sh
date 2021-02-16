@@ -79,8 +79,8 @@ sudo spctl --master-disable
 # Dock
 # --
 
-# Set the icon size of Dock items to 45 pixels
-defaults write com.apple.dock tilesize -int 45
+# Set the icon size of Dock items to 40 pixels
+defaults write com.apple.dock tilesize -int 40
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -107,12 +107,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Remove default Dock junk
-defaults delete com.apple.dock persistent-apps;
-defaults delete com.apple.dock persistent-others;
-defaults delete com.apple.dock recent-apps;
+# defaults delete com.apple.dock persistent-apps;
+# defaults delete com.apple.dock persistent-others;
+# defaults delete com.apple.dock recent-apps;
 
-# Show only open applications in the Dock
-defaults write com.apple.dock static-only -bool true
+# Don't show recent applications in Dock
+defaults write com.apple.dock show-recents -bool FALSE
 
 
 # Finder
