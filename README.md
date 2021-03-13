@@ -47,7 +47,6 @@ Provides prompts and menus that guide you through the automated setup of:
 	- Use `defaults read` to automate all application settings
 	- Prompt to set Static IP
 	- Prompt to mount NAS via IP address, always mount on boot
-	- Set desktop background image
 	- Set screensaver to Drift > Spectrum, no clock
 	- Require password immediately after sleep or screensaver begins
 	- Enable secondary click

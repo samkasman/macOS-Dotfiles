@@ -54,8 +54,8 @@ do
 			./configs/macOS/home-directories.sh
 
 			# Applications + Config
-			./configs/macOS/app-store.sh
 			./configs/brew/brew.sh
+			./configs/macOS/app-store.sh
 			./configs/npm/npm.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh
@@ -87,8 +87,8 @@ do
 			sudo -v
 			echo "\\n"
 
-			./configs/macOS/app-store.sh
 			./configs/brew/brew.sh
+			./configs/macOS/app-store.sh
 			./configs/npm/npm.sh
 			./configs/ableton/ableton.sh
 			./configs/iterm2/iterm2.sh

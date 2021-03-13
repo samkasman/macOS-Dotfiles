@@ -21,11 +21,37 @@ read -r -p "Install Oh-My-Zsh framework? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Copy oh-my-zsh into place
-		rm -rf ~/.oh-my-zsh
-		cp -R ./configs/zsh/oh-my-zsh ~/.oh-my-zsh
+		PS3=""
+		options=("Local Install" "Net Install" "Skip")
+		select opt in "${options[@]}"
+		do
+			case $opt in
+				"Local Install")
+					echo "\\n$opt, comin' right up!\\n"
 
-		echo "${GREEN}Installed Oh-My-Zsh framework${WHITE}"
+					# Copy oh-my-zsh into place
+					rm -rf ~/.oh-my-zsh
+					cp -R ./configs/zsh/oh-my-zsh ~/.oh-my-zsh
+
+					echo "${GREEN}Installed Oh-My-Zsh framework${WHITE}"
+
+					break;;
+				"Net Install")
+					echo "\\n$opt, comin' right up!\\n"
+
+					# Net install
+					sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+					echo "${GREEN}Installed Oh-My-Zsh framework${WHITE}"
+
+					break;;
+				"Skip")
+					echo "\\n${GREEN}Skipping...${WHITE}\\n"
+					break;;
+				*) echo "\\n$REPLY is invalid.\\n";;
+			esac
+		done
+
 
         ;;
     *)
