@@ -164,14 +164,11 @@ alias ..2='cd ../../'
 alias ..3='cd ../../../'
 alias ..4='cd ../../../../'
 
-# Reload .bash_profile (use green text for confirmation, then switch back to white text)
-alias bashrl='source ~/.bash_profile && printf "\e[96m" && echo .bash_profile reloaded! && printf "\e[0m" && echo ""'
+# Reload .zshrc (use green text for confirmation, then switch back to white text)
+alias zshrl='source ~/.zshrc && printf "\e[96m" && echo .zshrc reloaded! && printf "\e[0m" && echo ""'
 
-# Edit .bash_profile
-alias bashed='code ~/.bash_profile'
-
-# brew update/upgrade/cleanup
-alias brewplz='brew update && brew upgrade && brew cleanup'
+# Edit .zshrc
+alias zshed='code ~/.zshrc'
 
 # Clear shorthand
 alias c='clear'
@@ -209,6 +206,9 @@ alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
 
 # plz - last command, but sudo
 alias plz='sudo $(history -p !!)'
+
+# brewplz update/upgrade/cleanup
+alias brewplz='brew update && brew upgrade && brew cleanup'
 
 # npmplz - nuke and reinstall npm dependencies
 alias npmplz='rm -rf node_modules/ && npm install'
