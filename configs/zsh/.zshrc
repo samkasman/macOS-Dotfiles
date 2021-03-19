@@ -164,12 +164,6 @@ alias ..2='cd ../../'
 alias ..3='cd ../../../'
 alias ..4='cd ../../../../'
 
-# Reload .zshrc (use green text for confirmation, then switch back to white text)
-alias zshrl='source ~/.zshrc && printf "\e[96m" && echo .zshrc reloaded! && printf "\e[0m" && echo ""'
-
-# Edit .zshrc
-alias zshed='code ~/.zshrc'
-
 # Clear shorthand
 alias c='clear'
 
@@ -179,26 +173,29 @@ alias cp='cp -iv'
 # edit text
 alias edit='subl'
 
+# open pwd in Finder
+alias finder='open -a Finder ./'
+
 # ls - replace with exa
 alias ls='exa -al'
 
 # mv - interactive (prompt before overwrite), verbose
 alias mv='mv -iv'
 
-# rm - interactive (prompt before overwrite), verbose
-alias rm='rm -iv'
-
-# open pwd in Finder
-alias finder='open -a Finder ./'
-
 # path - echo everything in current PATH
 alias path='echo -e ${PATH//:/\\n}'
 
-# edit .zshrc
+# rm - interactive (prompt before overwrite), verbose
+alias rm='rm -iv'
+
+# youtube
+alias yt='youtube-dl'
+
+# Edit .zshrc
 alias zshed='code ~/.zshrc'
 
-# covid-19 tracker
-alias covid='watch -c -n600 "curl -s -L covid19.trackercli.com/history/us"'
+# Reload .zshrc (use green text for confirmation, then switch back to white text)
+alias zshrl='source ~/.zshrc && printf "\e[96m" && echo .zshrc reloaded! && printf "\e[0m" && echo ""'
 
 #
 # plz?
