@@ -29,19 +29,11 @@ Provides prompts and menus that guide you through the automated setup of:
 - [Homebrew](https://brew.sh/)
 	- my preferred `macOS` [tools and apps](https://github.com/samkasman/macOS-Dotfiles/blob/master/configs/brew/Brewfile)
 - [zsh](http://zsh.sourceforge.net/), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [PowerLevel10k](https://github.com/romkatv/powerlevel10k), [Powerline fonts](https://github.com/powerline/fonts)
--- My `zsh` config files
---- `~/.zshrc`
---- `~/.p10k.zsh`
+- My `zsh` config files
+	- `~/.zshrc`
+	- `~/.p10k.zsh`
 - `git` username and email address config
 - Global `npm` packages
-	- `browser-sync`
-	- `gatsby-cli`
-	- `grunt-cli`
-	- `gulp-cli`
-	- `lighthouse`
-	- `nodemon`
-	- `resume-cli`
-	- `typescript`
 - My preferred [Ableton Live](https://www.ableton.com/en/live/) dark theme
 
 ### To Do
