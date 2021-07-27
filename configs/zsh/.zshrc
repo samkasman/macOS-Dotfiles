@@ -148,7 +148,11 @@ export PATH=$PATH:/usr/local/opt/php/sbin
 
 # ruby
 export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
+export PATH=/Users/sam/.gem/ruby/3.0.0/bin:$PATH
+
+# gcloud
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/lume-sa-private-key.json"
 
 
 #
