@@ -21,7 +21,7 @@ read -r -p "Install 1Password? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Apple Alfred
+		# 1Password
 		mas install 1333542190
         ;;
     *)
@@ -38,7 +38,7 @@ read -r -p "Install Alfred? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
 
-		# Apple Alfred
+		# Alfred
 		mas install 405843582
         ;;
     *)
@@ -119,23 +119,6 @@ echo "\\n"
 
 # Prompt to install app
 # -
-read -r -p "Install Downlink? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Downlink
-		mas install 1454269192
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-        ;;
-esac
-
-echo "\\n"
-
-# Prompt to install app
-# -
 read -r -p "Install Garage Band? [y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY])
@@ -176,23 +159,6 @@ case "$response" in
 
 		# Microsoft Remote Desktop
 		mas install 1295203466
-        ;;
-    *)
-		# do nothing
-		echo "${GREEN}Skipping...${WHITE}"
-        ;;
-esac
-
-echo "\\n"
-
-# Prompt to install app
-# -
-read -r -p "Install Rocket.Chat? [y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY])
-
-		# Rocket.Chat
-		mas install 1086818840
         ;;
     *)
 		# do nothing
